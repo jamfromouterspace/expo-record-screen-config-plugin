@@ -1,0 +1,10 @@
+{
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "strict": true,
+    "paths": {
+      "expo-record-screen-config-plugin": ["../src/index"],
+      "expo-record-screen-config-plugin/*": ["../src/*"]
+    }
+  }
+}
