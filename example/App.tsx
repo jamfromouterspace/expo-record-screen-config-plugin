@@ -1,20 +1,10 @@
-import { StyleSheet, Text, View } from 'react-native';
-
 import * as ExpoRecordScreenConfigPlugin from 'expo-record-screen-config-plugin';
+import { Text, View } from 'react-native';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>{ExpoRecordScreenConfigPlugin.hello()}</Text>
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>API key: {ExpoRecordScreenConfigPlugin.getApiKey()}</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
