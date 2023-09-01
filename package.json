@@ -1,5 +1,5 @@
 {
-  "name": "expo-record-screen-config-plugin",
+  "name": "@closetothe/expo-record-screen-config-plugin",
   "version": "0.1.0",
   "description": "A config plugin to add ReplayKit during expo prebuild (allows use of react-native-record-screen)",
   "main": "build/index.js",
@@ -14,6 +14,10 @@
     "expo-module": "expo-module",
     "open:ios": "open -a \"Xcode\" example/ios",
     "open:android": "open -a \"Android Studio\" example/android"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "keywords": [
     "react-native",
