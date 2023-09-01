@@ -1,30 +1,21 @@
 # expo-record-screen-config-plugin
 
-A config plugin to add ReplayKit during expo prebuild (allows use of react-native-record-screen)
+A config plugin to add ReplayKit during expo prebuild (allows use of [react-native-record-screen](https://github.com/closetothe/react-native-record-screen))
 
-# API documentation
+npm: https://www.npmjs.com/package/@closetothe/expo-record-screen-config-plugin
 
-- [Documentation for the main branch](https://github.com/expo/expo/blob/main/docs/pages/versions/unversioned/sdk/record-screen-config-plugin.md)
-- [Documentation for the latest stable release](https://docs.expo.dev/versions/latest/sdk/record-screen-config-plugin/)
-
-# Installation in managed Expo projects
-
-For [managed](https://docs.expo.dev/archive/managed-vs-bare/) Expo projects, please follow the installation instructions in the [API documentation for the latest stable release](#api-documentation). If you follow the link and there is no documentation available then this library is not yet usable within managed projects &mdash; it is likely to be included in an upcoming Expo SDK release.
-
-# Installation in bare React Native projects
-
-For bare React Native projects, you must ensure that you have [installed and configured the `expo` package](https://docs.expo.dev/bare/installing-expo-modules/) before continuing.
-
-### Add the package to your npm dependencies
+# Installation 
 
 ```
-npm install expo-record-screen-config-plugin
+yarn add @closetothe/expo-record-screen-config-plugin
+
 ```
 
-### Configure for iOS
+Then, in your `app.json`  
 
-Run `npx pod-install` after installing the npm package.
-
+```
+"plugins": ["expo-record-screen-config-plugin"]
+```
 
 
 # Contributing
